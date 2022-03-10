@@ -1,0 +1,21 @@
+nav img{
+    width: auto;
+}
+nav {
+    background-color: aqua;
+    padding: 30px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+li a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}

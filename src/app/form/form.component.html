@@ -1,0 +1,38 @@
+
+    <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+        <input type="text" ngModel name="userName" placeholder="Enter Name"/>
+        <br/> <br/>
+        <input type="text" ngModel name="userEmail" placeholder="Enter Email"/>
+        <br/> <br/>
+        <input type="text" ngModel name="userPassword" placeholder="Enter Password"/>
+        <br/> <br/>
+        <button>Register</button>
+
+    </form>
+
+    <ul>
+        <li>{{userData.userName}}</li>
+        <li>{{userData.userEmail}}</li>
+        <li>{{userData.userPassword}}</li>
+    </ul>
+
+    <button (click)="toggle()">Toggle</button>
+
+    <h1 *ngIf="display">
+        Heading Tag
+    </h1>
+
+    <p>
+        <ngb-alert [dismissible]="false">
+          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </ngb-alert>
+      </p>
+
+      <div class="example-button-row">
+        <button mat-raised-button>Basic</button>
+        <button mat-raised-button color="primary">Primary</button>
+        <button mat-raised-button color="accent">Accent</button>
+        <button mat-raised-button color="warn">Warn</button>
+        <button mat-raised-button disabled>Disabled</button>
+        <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+      </div>
